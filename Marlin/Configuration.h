@@ -1,6 +1,7 @@
 /**
 22_08_2020
 28_08_2020 temperatura hotend 
+18_09_2021 Habilitei a função de ajustes e salvamento pelo visor LCD
  *
  */
 #ifndef CONFIGURATION_H
@@ -107,7 +108,7 @@
 // Optional custom name for your RepStrap or other custom machine
 // Displayed in the LCD "Ready" message
 //WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
-#define CUSTOM_MACHINE_NAME "26/09/2020"
+#define CUSTOM_MACHINE_NAME "18/09/2021"
 
 // Define this to set a unique identifier for this printer, (Used by some programs to differentiate between machines)
 // You can use an online service to generate a random UUID. (eg http://www.uuidgenerator.net/version4)
@@ -922,7 +923,7 @@
 #define Z_MIN_POS 0
 #define X_MAX_POS X_BED_SIZE
 #define Y_MAX_POS Y_BED_SIZE
-#define Z_MAX_POS 125.5 // EU ALTEREI ESSE VALOR estava 134.8
+#define Z_MAX_POS 126.5 // EU ALTEREI ESSE VALOR estava 134.8
 
 /**
  * Software Endstops
@@ -1278,7 +1279,8 @@
 // M501 - reads parameters from EEPROM (if you need reset them after you changed them temporarily).
 // M502 - reverts to the default "factory settings".  You still need to store them in EEPROM afterwards if you want to.
 //
-//#define EEPROM_SETTINGS // Enable for M500 and M501 commands
+//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW Ajustes pelo Visor LDC WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+#define EEPROM_SETTINGS // Enable for M500 and M501 commands //Habilitei para poder fazer ajustes pelo visor de LCD
 //#define DISABLE_M503    // Saves ~2700 bytes of PROGMEM. Disable for release!
 #define EEPROM_CHITCHAT   // Give feedback on EEPROM commands. Disable to save PROGMEM.
 
